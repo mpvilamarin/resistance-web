@@ -1,0 +1,100 @@
+.cont {
+    padding: 0 100px 100px 100px;
+}
+
+.contForm {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contDatos {
+    display: flex;
+}
+
+.contAzul {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #2A79BD, #2C2E67);
+    border-radius: 20px 0 20px 0;
+    width: 30%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.37);
+}
+
+.title {
+    font-family: 'Oswald';
+    font-size: 70px;
+    border-left: solid 4px #3a3b74;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 70%;
+    padding: 60px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Playfair Display';
+    color: black;
+    border-bottom: 1px solid rgb(121, 121, 121);
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.contButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #2888DB;
+    color: #fff;
+    font-family: 'Playfair Display';
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+transform: translateY(3px);
+}
+
+.icon,
+.icon1 {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.icon1 {
+    margin-top: 40px;
+}
+
+.parrafo,
+.parrafo1 {
+    font-family: 'Oswald';
+    margin-top: -1px;
+}
+
+.parrafo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.parrafo1 {
+    font-size: 20px;
+}

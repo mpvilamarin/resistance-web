@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  background: radial-gradient(circle, #3178bd 0%, #3a3b74 52%, #2b2b64 100%);
+  color: white;
+  padding: 1rem;
+}
+
+.contLeft {
+display: flex;
+flex: 1;
+flex-direction: column;
+padding: 30px 0 0 30px
+}
+
+.contRight {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 30px 0 0 30px;
+}
+
+.sub {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.text {
+font-size: 20px;
+margin-top: 25px;
+}
+
+.icons {
+  display: flex;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 30px 0
+}
+
+.news {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.input {
+width: 40%;
+height: 40px;
+border-radius: 15px;
+border: none;
+margin-right: 10px;
+
+}
+
+.button {
+  border-radius: 25px;
+  padding: 10px;
+  color:white;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #3178bd;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform:translateY(3px);
+}
+
+.link {
+text-align: end;
+text-decoration: underline;
+margin-top: 30px;
+}

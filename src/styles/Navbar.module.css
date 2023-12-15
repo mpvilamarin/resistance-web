@@ -1,0 +1,85 @@
+.container {
+  background: rgba(245, 245, 245, 0.747);
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.image {
+  max-height:60px;
+  transition: 0.3s;
+}
+.image:hover {
+  transform: translateX(4px);
+}
+
+.list {
+align-items: end;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.navItem a {
+  position: relative;
+  color: #2b2b64;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navItem a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px; /* Coloca la línea justo debajo del texto */
+  left: 0;
+  background-color: #2b2b64;
+  transition: width 0.3s ease; /* Añade una transición para la animación */
+}
+
+.navItem a:hover::before {
+  width: 100%; /* Cuando se hace hover, la línea crece de 0 a 100% */
+}
+
+.dropdown {
+  margin-top: 27px;
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgba(245, 245, 245, 0.747);
+  z-index: 100;
+  padding: 0;
+  list-style: none;
+}
+
+.navItem:hover .dropdown {
+  display: block;
+  position: absolute;
+  top: calc(100% + 10px); /* Alinea el menú debajo del texto "Recursos" con 10px de separación */
+  left: 0;
+}
+
+.dropdown li {
+  padding: 10px;
+}

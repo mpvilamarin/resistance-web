@@ -1,0 +1,26 @@
+.contHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    background-image: url('/images/contact.jpg');
+    background-size: cover;
+}
+
+.contPrincipal {
+    padding: 100px
+}
+
+.enlace {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    color: rgb(0, 110, 255);
+}
+
+.contH1 {
+    color: white;
+    font-family: 'Oswald';
+}
+.contH3 {
+    margin-top: 35px
+}
