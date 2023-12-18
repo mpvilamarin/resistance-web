@@ -1,5 +1,4 @@
 /* Carrusel certificaciones */
-
 .cont {
   width: 500px;
   height: 280px;
@@ -25,7 +24,8 @@
   margin-top: 50px;
 }
 
-.cont, .cont1 {
+.cont,
+.cont1 {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -65,11 +65,11 @@
 }
 
 .icon.active {
-  transform: rotate(90deg); /* Rotar 90 grados cuando está activo */
+  transform: rotate(90deg);
 }
 
 .toggleTitle.active {
-  color: #007bff; /* Cambiar color del título cuando está activo */
+  color: #007bff;
 }
 
 .toggleContent {
@@ -90,4 +90,20 @@
 
 .parrafo {
   padding: 0 40px 20px 40px
+}
+
+/* Carrusel */
+.carousel {
+  max-width: 900px;
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  cursor: pointer;
+  padding: 50px 0 100px 0;
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  padding: 0 30px; /* Ajusta el espaciado según sea necesario */
+  box-sizing: border-box;
 }

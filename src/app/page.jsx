@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '../styles/page.module.css';
 //import Certificaciones from '@/components/Certificaciones';
 import Form from '@/components/Form';
+import Carousel from '@/components/Carousel';
 
 
 export default function Home() {
@@ -67,6 +68,7 @@ export default function Home() {
       </div>
       <div>
         <h1 className={styles.title}>Nuestras Cetificaciones</h1>
+        <Carousel />
       </div>
       <Form />
     </div>

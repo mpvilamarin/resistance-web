@@ -3,6 +3,7 @@ import React from "react";
 import styles from './nosotros.module.css';
 import Form from "@/components/Form";
 import TableToggle from "@/components/Toggle";
+import Carousel from "@/components/Carousel";
 
 export default function Nosotros() {
 
@@ -56,7 +57,7 @@ export default function Nosotros() {
             </div>
 
             <div className={styles.contFrase}>
-                <h2 className={styles.frase}>"El eslabón más débil de la seguridad es el componente humano</h2>
+                <h2 className={styles.frase}>"El eslabón más débil de la seguridad es el componente humano"</h2>
             </div>
 
             <h2 className={styles.title}>Nuestra Propuesta de Valor</h2>
@@ -91,38 +92,19 @@ export default function Nosotros() {
             </div>
             <div className={styles.cont}>
                 <h2 className={styles.title}>Nosotros</h2>
-                <h3>Principales Servicios</h3>
-                <p>Somos una empresa fundada en febrero de 2019 cuya misión es contribuir con el desarrollo socio-económico de personas y empresas hacia un entorno digital seguro a través de la prestación de servicios de consultorías de seguridad en la información en empresas de cualquier sector enfocado en el siguiente portafolio de servicios:</p>
-                <ul className={styles.list}>
-                    <li>Campañas de formación en seguridad de la información.</li>
-                    <li>Gestión de Riesgos.</li>
-                    <li>Documentación de procesos misionales y de apoyo.</li>
-                    <li>Análisis de brechas sobre normas, y estándares de seguridad.</li>
-                    <li>Análisis de vulnerabilidades en la tecnología.</li>
-                    <li>Ethical Hacking y Pentesting.</li>
-                    <li>Arquitectura empresarial.</li>
-                    <li>Definición e implementación de políticas, estándares y procedimientos de seguridad de la información.</li>
-                    <li>Seguridad administrada.</li>
-                </ul>
-                <p>Generamos conciencia en familias e instituciones educativas acerca de los riesgos en internet, a través de los siguientes servicios:</p>
-                <ul className={styles.list}>
-                    <li>Producción de material audiovisual lúdico y creativo enfocado en seguridad digital.</li>
-                    <li>Conferencias para generar conciencia acerca de la importancia de la seguridad digital.</li>
-                    <li>Capacitaciones técnicas sobre el uso de herramientas para protegerse de los riesgos en el ciberespacio.</li>
-                </ul>
                 <div>
                     <h3 className={styles.contMision}>Misión</h3>
                     <p>Contribuir con el desarrollo socio-económico de personas y empresas hacia un entorno digital seguro.</p>
                     <h3 className={styles.contMision}>Visión</h3>
-                    <p>Para el año 2022:</p>
-                    <p>1. Estar posicionado como una marca que ofrece servicios de seguridad de la información a la medida de pequeñas y grandes empresas.</p>
-                    <p>2. Contar con planes de formación presencial y digital dirigidos a empresas y familias para generar conciencia de la importancia de la seguridad de la información.</p>
-                    <p>3. Contar con servicios de fácil acceso a la sociedad, manteniéndose a la vanguardia de los avances tecnológicos y amenazas del entorno digital.</p>
-                    <p>4. Brindar oportunidades de trabajo a personas de excelentes cualidades humanas y espíritu de servicio.</p>
-                    <p>5. Apoyar en el fortalecimiento de las competencias del capital humano.</p>
+                    <p>Para el año 2025:</p>
+                    <p>1. Estar posicionada como marca para la generación de contenido digital y juegos que impulsen la adopción de buenas prácticas de seguridad en empresas, personas y familias, contribuyendo a una estrategia de defensa basada en el ser humano.</p>
+                    <p>2. Ser reconocida como una de las compañías con más altos estándares en los servicios de consultorías y auditorías en seguridad de la información cumpliendo a cabalidad las expectativas de nuestros clientes y socios comerciales.</p>
+                    <p>3. Implementar servicios y plataformas de formación en ciberseguridad de fácil acceso a la sociedad, manteniéndose a la vanguardia de los avances tecnológicos y amenazas del entorno digital.</p>
+                    <p>4. Fortalecer las competencias del capital humano en la implementación de plataformas de defensa Open Source.</p>
                 </div>
                 <div>
                     <h2 className={styles.title}>Nuestras Certificaciones</h2>
+                    <Carousel />
                 </div>
                 <div>
                     <p>Lo que necesita saber</p>
