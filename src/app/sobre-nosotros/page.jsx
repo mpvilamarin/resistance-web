@@ -1,9 +1,9 @@
-/* use Client */
 import React from "react";
 import styles from './nosotros.module.css';
 import Form from "@/components/Form";
 import TableToggle from "@/components/Toggle";
 import Carousel from "@/components/Carousel";
+import Clients from "@/components/Clients";
 
 export default function Nosotros() {
 
@@ -90,6 +90,10 @@ export default function Nosotros() {
                     </div>
                 </div>
             </div>
+            <div>
+                <h2 className={styles.title}>Nuestros Clientes</h2>
+                <Clients />
+            </div>
             <div className={styles.cont}>
                 <h2 className={styles.title}>Nosotros</h2>
                 <div>
@@ -107,7 +111,7 @@ export default function Nosotros() {
                     <Carousel />
                 </div>
                 <div>
-                    <p>Lo que necesita saber</p>
+                    <p className={styles.par}>Lo que necesita saber</p>
                     <h3 className={styles.title}>Preguntas Frecuentes</h3>
                     <TableToggle />
                 </div>

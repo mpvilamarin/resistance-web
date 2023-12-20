@@ -11,6 +11,7 @@
 .title {
     text-align: center;
     font-size: 60px;
+    margin-top: 60px;
 }
 
 .cont {
@@ -99,4 +100,8 @@
     border-left: solid 3px #2B5797;
     margin-top: 30px;
     padding-left: 10px;
+  }
+
+  .par {
+    margin-bottom: -50px;
   }

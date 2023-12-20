@@ -17,7 +17,7 @@ const Carousel = () => {
       './certificaciones/ISO3100.png',
       './certificaciones/ISO22301.png',
       './certificaciones/ISO27001.png',
-      './certificaciones/ISO27032.jpeg',
+      './certificaciones/ISO27032.png',
       './certificaciones/ITIL4.png',
    ];
 
