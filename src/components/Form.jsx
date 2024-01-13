@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import styles from '../styles/Form.module.css';
 
 export default function Form() {
@@ -37,9 +39,9 @@ export default function Form() {
             />
             <input
               type="text"
-              id="compañia"
-              name="compañia"
-              placeholder="Compañía"
+              id="empresa"
+              name="empresa"
+              placeholder="mpresa"
               className={styles.input}
             />
           </div>

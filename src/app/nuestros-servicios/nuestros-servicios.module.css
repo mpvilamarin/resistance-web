@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 550px;
+    height: 800px;
     background-image: url('/images/contact.jpg');
     background-size: cover;
 }
@@ -33,60 +33,66 @@
     margin-top: 50px;
 }
 
-/* SERVICIOS PARA EMPRESAS */
-.contHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 550px;
-    background-image: url('/images/contact.jpg');
-    background-size: cover;
-    COLOR: white;
-}
-
-.consultorias {
-    max-width: 600px;
-    /* Ajusta el ancho máximo según sea necesario */
-}
-
-.list {
-    list-style-type: none;
-    padding: 0;
+.button {
+    border-radius: 25px;
+    background-color: #2B5797;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-right: 15px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.paragraphCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Centra los párrafos debajo de los títulos */
+.button:hover {
+    transform: translateY(3px);
+    background-color: #4C7BBE;
+    margin-top: 40px;
 }
 
-.paragraph {
-    height: 0;
-    overflow: hidden;
-    text-align: center;
-    /* Centra el texto dentro del párrafo */
-    margin-top: 10px;
-    transition: height 0.5s ease;
-    /* Cambiamos la propiedad de transición */
-}
-
-.visible {
-    height: auto;
-    opacity: 1;
-}
-
-.conTitle {
-    font-size: 20px;
+.buttonService {
+    border-radius: 25px;
+    background-color: #2B5797;
+    color: white;
     font-family: 'Oswald';
-    font-weight: 300;
-    color: black;
-    ;
+    border: none;
+    padding: 10px;
+    margin-right: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 30px;
 }
 
-.li {
-    border: solid 3px black;
+.buttonService:hover {
+    transform: translateY(3px);
+    background-color: #4C7BBE;
+}
+
+.contLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px
+}
+.contServices {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contService {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-right: 15px;
+  }
+
+.image {
+    height: 150px;
+    transition: 0.3s;
+}
+
+.image:hover {
+    filter: opacity(0.4)
 }
 
 /* SERVICIOS PARA FAMILIAS Y COLEGIOS */
@@ -131,8 +137,8 @@
 
 .titleFamily {
     font-family: 'Oswald';
-  font-size: 60px;
-  text-align: center;
+    font-size: 60px;
+    text-align: center;
 }
 
 .cont1 {
@@ -144,9 +150,9 @@
 
 .contContenido {
     display: flex;
-margin-top: 40px;
-align-items: center;
-justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contImg {

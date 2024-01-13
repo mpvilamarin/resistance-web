@@ -36,7 +36,7 @@ const TableToggle = () => {
           </button>
           {toggleStates.pregunta1 && (
             <p className={styles.parrafo}>
-              Arpeggio Consultores, D-artis, Fundasuvicol, Celunion, Ancla Telecomunicaciones y Market Cell.
+              SierraCol, IDIME, Entelgy, Grant Thornton Colombia, SuboCol, ERConsulting, Arpeggio Consultores, Ética y Tecnología, Lepine Colombia SAS, IngeoData, Clínica Nueva de Cali, D-artis, Fundasuvicol, Celunion, Ancla Telecomunicaciones y Market Cell.
             </p>
           )}
         </div>
@@ -53,7 +53,7 @@ const TableToggle = () => {
           </button>
           {toggleStates.pregunta2 && (
             <p className={styles.parrafo}>
-              Puede diligenciar formulario de contacto en nuestra página web o escribirnos a través de nuestras redes sociales.
+              Puede diligenciar formulario de contacto en nuestra página web, escribirnos a nuestro correo marketing@resistance.com.co, a través de nuestras redes sociales o directamente en nuestra línea de atención +57 302 705 8970
             </p>
           )}
         </div>
@@ -70,7 +70,7 @@ const TableToggle = () => {
           </button>
           {toggleStates.pregunta3 && (
             <p className={styles.parrafo}>
-              El contenido y trabajo que hemos diseñado hasta la fecha aborda de manera más lúdica las problemáticas de seguridad para que sea no sólo de interés de empresas sino de familias paara que se motiven a aprender más acerca de seguridad digital. En Resistance consideramos relevante abordar los riesgos teniendo en cuenta el contexto e idiosincrasia en Colombia y nuestros países de latinoamérica.
+              El contenido y trabajo que hemos diseñado hasta la fecha aborda de manera más lúdica las problemáticas de seguridad para que sea no sólo de interés de empresas sino de familias para que se motiven a aprender más acerca de seguridad digital. En Resistance consideramos relevante abordar los riesgos teniendo en cuenta el contexto e idiosincrasia en Colombia y nuestros países de latinoamérica.
             </p>
           )}
         </div>

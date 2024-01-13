@@ -1,0 +1,74 @@
+.contToggle {
+    display: flex;
+    padding: 0 100px 0 100px;
+    margin-top: 50px;
+}
+
+.cont,
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cont {
+    margin-right: 30px;
+}
+
+.contPregunta {
+    border-bottom: 3px solid #2B5797;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.048);
+    margin-bottom: 40px;
+}
+
+.toggleContainer {
+    display: flex;
+}
+
+.toggleTitle {
+    font-family: 'Oswald';
+    display: flex;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.icon.active {
+    transform: rotate(90deg);
+}
+
+.toggleTitle.active {
+    color: #007bff;
+}
+
+.toggleContent {
+    display: none;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.toggleButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.parrafo {
+    padding: 0 40px 20px 40px
+}

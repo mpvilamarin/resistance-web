@@ -1,31 +1,11 @@
-/* Carrusel certificaciones */
-
-.cont {
-  width: 500px;
-  height: 280px;
-  margin: 0 auto;
-}
-
-.slider {
-  position: relative;
-  height: 100%;
-}
-
-.images {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 1px solid white;
-  overflow: hidden;
-}
-
 /* Toggle */
 .container {
   display: flex;
   margin-top: 50px;
 }
 
-.cont, .cont1 {
+.cont,
+.cont1 {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -65,11 +45,11 @@
 }
 
 .icon.active {
-  transform: rotate(90deg); /* Rotar 90 grados cuando está activo */
+  transform: rotate(90deg);
 }
 
 .toggleTitle.active {
-  color: #007bff; /* Cambiar color del título cuando está activo */
+  color: #007bff;
 }
 
 .toggleContent {
@@ -90,4 +70,33 @@
 
 .parrafo {
   padding: 0 40px 20px 40px
+}
+
+/* Carrusel */
+.carousel, .carouselClients {
+  max-width: 1100px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.carousel {
+  padding: 50px 0 180px 0;
+}
+
+.carouselImageClients {
+  padding-top: 50px;
+}
+
+.carouselImage {
+  width: 250px;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.carouselImageClients {
+  width: 220px;
+  height: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }

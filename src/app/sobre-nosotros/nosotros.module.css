@@ -5,12 +5,13 @@
     height: 550px;
     background-image: url('/images/contact.jpg');
     background-size: cover;
-    COLOR: white;
+    color: white;
 }
 
 .title {
     text-align: center;
     font-size: 60px;
+    margin-top: 60px;
 }
 
 .cont {
@@ -32,7 +33,7 @@
   
   .sub {
     font-family: 'Oswald';
-    font-weight: 500;
+    font-weight: 600 !important;
     font-size: 20px;
   }
 
@@ -99,4 +100,8 @@
     border-left: solid 3px #2B5797;
     margin-top: 30px;
     padding-left: 10px;
+  }
+
+  .par {
+    margin-bottom: -50px;
   }

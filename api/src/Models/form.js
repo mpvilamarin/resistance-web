@@ -1,0 +1,39 @@
+const { DataTypes } = require('sequelize');
+
+module.exports = (sequelize) => {
+  sequelize.define('Contacto', {
+    id: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true,
+      allowNull: false,
+    },
+    nombre: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isEmail: true,
+      },
+    },
+    telefono: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isNumeric: true,
+      },
+    },
+    empresa: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    mensaje: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  }, { timestamps: false });
+};

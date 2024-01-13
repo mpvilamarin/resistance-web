@@ -2,7 +2,7 @@
   display: flex;
   background: radial-gradient(circle, #3178bd 0%, #3a3b74 52%, #2b2b64 100%);
   color: white;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .contLeft {
@@ -34,20 +34,20 @@ margin-top: 25px;
 }
 
 .social {
-  width: 40px;
-  height: 40px;
-  margin: 10px 10px 30px 0
+  width: 35px;
+  height: 35px;
+  margin: 10px 10px 10px 0
 }
 
 .news {
   margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: 600;
+  font-weight: 400 !important;
+  font-size: 16px !important;
 }
 
 .input {
 width: 40%;
-height: 40px;
+height: 30px;
 border-radius: 15px;
 border: none;
 margin-right: 10px;
@@ -58,8 +58,9 @@ margin-right: 10px;
   border-radius: 25px;
   padding: 10px;
   color:white;
-  font-size: 18px;
-  font-weight: 500;
+  font-family: 'Playfair';
+  font-size: 15px;
+  font-weight: 400;
   background-color: #3178bd;
   transition: 0.3s;
   border: none;
