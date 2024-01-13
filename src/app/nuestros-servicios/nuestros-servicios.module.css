@@ -95,62 +95,6 @@
     filter: opacity(0.4)
 }
 
-/* SERVICIOS PARA EMPRESAS */
-.contHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 550px;
-    background-image: url('/images/contact.jpg');
-    background-size: cover;
-    COLOR: white;
-}
-
-.consultorias {
-    max-width: 600px;
-    /* Ajusta el ancho máximo según sea necesario */
-}
-
-.list {
-    list-style-type: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.paragraphCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Centra los párrafos debajo de los títulos */
-}
-
-.paragraph {
-    height: 0;
-    overflow: hidden;
-    text-align: center;
-    /* Centra el texto dentro del párrafo */
-    margin-top: 10px;
-    transition: height 0.5s ease;
-    /* Cambiamos la propiedad de transición */
-}
-
-.visible {
-    height: auto;
-    opacity: 1;
-}
-
-.conTitle {
-    font-size: 20px;
-    font-family: 'Oswald';
-    font-weight: 300;
-    color: black;
-    ;
-}
-
-.li {
-    border: solid 3px black;
-}
-
 /* SERVICIOS PARA FAMILIAS Y COLEGIOS */
 .contVideo {
     display: flex;

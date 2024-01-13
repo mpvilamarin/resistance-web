@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import styles from '../styles/footer.module.css';
 
@@ -20,7 +19,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={styles.contRight}>
-                    <h3 className={styles.news}>Suscríbete a nuestro Newsletter</h3>
+                    <h4 className={styles.news}>Suscríbete a nuestro Newsletter</h4>
                     <div className={styles.contForm}>
                         <label htmlFor="Email" className={styles.label}></label>
                         <input
