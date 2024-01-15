@@ -1,17 +1,7 @@
-.contHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 550px;
-    background-image: url('/images/contact.jpg');
-    background-size: cover;
-    color: white;
-    margin-bottom: 100px;
-}
-
 .contToggle {
     display: flex;
-    padding: 0 100px 0 100px;
+    align-items: center;
+    padding: 70px 100px 0 100px;
 }
 
 .cont,
@@ -32,4 +22,8 @@
     border-left: 3px solid #2B5797;
     padding: 20px 0 0 8px;
     margin-top: 20px;
+}
+
+.contForm {
+    margin-top: 100px;
 }

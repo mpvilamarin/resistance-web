@@ -4,15 +4,18 @@ import Form from "@/components/Form";
 import TableToggle from "@/components/Toggle";
 import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
-import Layout from "@/app/layout"
+import Hero from "@/components/Hero";
 
 export default function Nosotros() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.contHero}>
-                <h1>SOBRE NOSOTROS</h1>
-            </div>
+            <Hero
+                imagePath="/images/contact.jpg"
+                title="Sobre Nosotros"
+                button1Text="Preguntas Frecuentes"
+                button2Text="Nosotros"
+            />
             <div className={styles.cont}>
                 <h1 className={styles.title}>Resistance</h1>
                 <p>¿Has notado cómo el mundo ha cambiado producto de la virtualidad sin que todas las personas, empresas e instituciones educativas estuviesen preparadas para adoptar nuevas tecnologías?. Los delincuentes cibernéticos se reinventaron y aprovecharon la oportunidad, muestra de esto es que solamente en Colombia las cifras de los casos reportados por delitos como suplantación de sitios web, incrementaron en un 377% durante la pandemia en comparación con el año anterior, en páginas como: multas de tránsito, bonos del gobierno, y vacunación. El phishing es el principal esquema de fraude en el mundo; según estudio realizado en 2020 por la empresa TransUnion en 15 países que incluyó Colombia, el 27% de los consumidores afirmaron haber sido estafados con temas relacionados con el covid.</p>

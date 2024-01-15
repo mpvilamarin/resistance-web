@@ -3,6 +3,7 @@ import React from "react";
 import styles from '../nuestros-servicios.module.css';
 import Carta from "./carta";
 import Form from "@/components/Form";
+import Hero from "@/components/Hero";
 
 export default function Familias() {
 
@@ -42,9 +43,14 @@ export default function Familias() {
 
     return (
         <div>
-            <div className={styles.contHero}>
-                <h1>SERVICIOS PARA FAMILIAS Y COLEGIOS</h1>
-            </div>
+           <Hero
+                imagePath="/images/contact.jpg"
+                title="Familias Colegios"
+                button1Text="Familias"
+                button2Text="Colegios"
+                button1Url="/nuestros-servicios/servicios-empresas"
+                button2Url="/nuestros-servicios/servicios-familias-y-colegios"
+            />
             <div className={styles.contVideo}>
                 <iframe
                     className={styles.video}
