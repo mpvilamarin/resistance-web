@@ -36,7 +36,11 @@ p {
 
 li {
   font-family: 'Playfair', serif;
+  font-size: 17px;
+  font-weight: 500;
   text-align: justify;
+  margin-top: 15px;
+  line-height: 1.5;
 }
 
 h1 {

@@ -8,18 +8,10 @@ import Hero from '@/components/Hero';
 
 const Empresas = () => {
 
-    // const scrollToSection = (sectionId) => {
-    //     const section = document.getElementById(sectionId);
-    //     if (section) {
-    //         section.scrollIntoView({ behavior: "smooth" });
-    //     }
-    // };
-
-
     return (
         <div>
             <Hero
-                imagePath="/images/contact.jpg"
+                imagePath="/images/HeroEmpresas.jpg"
                 title="Servicios Empresas"
                 button1Text="Consultorias"
                 button2Text="Seguridad Administrada"

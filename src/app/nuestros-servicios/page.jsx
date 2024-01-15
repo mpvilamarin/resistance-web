@@ -8,10 +8,12 @@ export default function Servicios() {
     return (
         <div>
             <Hero
-                imagePath="/images/contact.jpg"
+                imagePath="/images/HeroServicios.jpg"
                 title="Nuestros Servicios"
                 button1Text="Para Empresas"
                 button2Text="Para Familias"
+                button1Url="/nuestros-servicios/servicios-empresas"
+                button2Url="/nuestros-servicios/servicios-familias-y-colegios"
             />
             <div className={styles.cont}>
                 <h2 style={{
