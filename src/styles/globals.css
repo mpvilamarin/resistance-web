@@ -4,7 +4,7 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-    --font-principal: 'Playfair Display', serif;
+    --font-principal: 'Playfair Display', 'Oswald';
 }
 
 * {
@@ -22,19 +22,20 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 15px;
 }
 
 p {
-  font-family: 'Playfair Display';
-  font-size: 16px;
+  font-family: 'Playfair', serif;
+  font-size: 17px;
+  font-weight: 500;
   text-align: justify;
   margin-top: 15px;
   line-height: 1.5;
 }
 
 li {
-  font-family: 'Playfair Display';
-  font-size: 16px;
+  font-family: 'Playfair', serif;
   text-align: justify;
 }
 
@@ -53,3 +54,6 @@ h3 {
   font-size: 28px;
 }
 
+h4 {
+  font-family: 'Oswald';
+}

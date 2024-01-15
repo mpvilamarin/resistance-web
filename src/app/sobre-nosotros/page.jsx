@@ -4,6 +4,7 @@ import Form from "@/components/Form";
 import TableToggle from "@/components/Toggle";
 import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
+import Layout from "@/app/layout"
 
 export default function Nosotros() {
 
