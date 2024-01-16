@@ -7,6 +7,7 @@ import styles from './styles.module.css'
 import Link from 'next/link';
 import { animateScroll } from 'react-scroll';
 
+
 const HeaderIcon = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -20,10 +21,11 @@ const HeaderIcon = () => {
     };
 
     const handleScrollToTop = () => {
-        scroll.scrollToTop(); 
+        animateScroll.scrollToTop();
     };
 
     return (
+        
         <div
             className={styles.headerUp}
             onMouseEnter={() => setIsHovered(true)}
