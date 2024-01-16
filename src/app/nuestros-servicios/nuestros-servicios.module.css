@@ -1,5 +1,5 @@
 .cont {
-    padding: 50px 100px 100px 100px;
+    padding: 20px 100px 100px 100px;
     margin-top: 50px;
 }
 
@@ -75,7 +75,7 @@
 
 .titleFamilia {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     color: white;
     border-left: solid 4px #3a3b74;
     padding-left: 10px;
@@ -83,15 +83,15 @@
 
 .titleFam {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     border-left: solid 4px #3a3b74;
     text-align: center;
-    padding-left: 30px;
+    padding: 40px 30px 0 0;
 }
 
 .titleFamily {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -127,7 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 100px 100px 100px;
+    padding: 80px 100px 50px 100px;
 }
 
 .carta {
@@ -182,4 +182,4 @@
 
 .carta:hover .back {
     transform: rotateY(0deg);
-}
+}     
