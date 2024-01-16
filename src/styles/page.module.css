@@ -16,18 +16,20 @@
 
 .h31 {
   margin: 5px 0 20px 0;
-  font-size: 50px;
+  font-size: 70px;
+  font-family: 'Oswald';
   line-height: 0.9;
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 .p1 {
   margin-bottom: -10px;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .p2 {
   padding-right: 100px;
+  font-size: 20px;
 }
 
 .image {

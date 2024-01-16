@@ -11,11 +11,13 @@ const Hero = ({ imagePath, title, button1Text, button1Url, button2Text, button2U
                 <img src={imagePath} alt="Servicios" className={styles.heroImage} />
             </div>
             <div className={styles.containerHero}>
-                <h1 className={styles.title}>
-                    <span>{titleLines[0]}</span>
-                    <br />
-                    <span>{titleLines[1]}</span>
-                </h1>
+                <div className={`${styles.animated} ${styles.bounceInLeft}`}>
+                    <h1 className={styles.title}>
+                        <span>{titleLines[0]}</span>
+                        <br />
+                        <span>{titleLines[1]}</span>
+                    </h1>
+                </div>
                 <div className={styles.contSec}>
                     <div className={styles.contButtons}>
                         <a href={button1Url} className={styles.button}>{button1Text}</a>

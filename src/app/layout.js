@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Playfair_Display } from 'next/font/google'
+import HeaderIcon from '@/components/HeaderIcon'
  
 const playfair = Playfair_Display({
   weight: ['400', '500', '700'],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={playfair.className}>
         <Navbar />
+        <HeaderIcon />
         {children}
         <Footer />
         </body>
