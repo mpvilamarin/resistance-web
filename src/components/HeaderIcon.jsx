@@ -31,7 +31,7 @@ const HeaderIcon = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <Link href="#" smooth={true} duration={500} onClick={handleScrollToTop}>
+            <Link href="#" smooth="true" duration={300} onClick={handleScrollToTop}>
                 <Lottie
                     options={defaultOptions}
                     height={80}
