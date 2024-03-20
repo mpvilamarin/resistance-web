@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Playfair_Display } from 'next/font/google'
 import HeaderIcon from '@/components/HeaderIcon'
+import { SpeedInsights } from "@vercel/speed-insights/next"
  
 const playfair = Playfair_Display({
   weight: ['400', '500', '700'],

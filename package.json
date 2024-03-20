@@ -11,6 +11,7 @@
   "dependencies": {
     "@apollo/client": "^3.8.10",
     "@emailjs/browser": "^3.12.1",
+    "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.8",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
