@@ -1,53 +1,6 @@
-.contHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
-    background-image: url('/images/contact.jpg');
-    background-size: cover;
-}
-
-.title {
-    color: white;
-    font-size: 80px;
-    font-family: 'Playfair Display';
-}
-
-.contSec {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.445);
-    margin-top: -90px;
-    padding: 30px;
-}
-
-.textHero {
-    color: white;
-    font-size: 15px;
-    font-family: 'Playfair Display';
-    width: 60%;
-}
-
 .cont {
-    padding: 50px 100px 100px 100px;
+    padding: 20px 100px 100px 100px;
     margin-top: 50px;
-}
-
-.button {
-    border-radius: 25px;
-    background-color: #2B5797;
-    color: white;
-    border: none;
-    padding: 15px;
-    margin-right: 15px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.button:hover {
-    transform: translateY(3px);
-    background-color: #4C7BBE;
-    margin-top: 40px;
 }
 
 .buttonService {
@@ -73,6 +26,7 @@
     justify-content: center;
     margin-top: 15px
 }
+
 .contServices {
     display: flex;
     justify-content: space-around;
@@ -84,7 +38,7 @@
     text-align: center;
     border: 1px solid gray;
     margin-right: 15px;
-  }
+}
 
 .image {
     height: 150px;
@@ -121,7 +75,7 @@
 
 .titleFamilia {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     color: white;
     border-left: solid 4px #3a3b74;
     padding-left: 10px;
@@ -129,15 +83,15 @@
 
 .titleFam {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     border-left: solid 4px #3a3b74;
     text-align: center;
-    padding-left: 30px;
+    padding: 40px 30px 0 0;
 }
 
 .titleFamily {
     font-family: 'Oswald';
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -163,15 +117,17 @@
 .sub {
     font-family: 'Oswald';
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 600;
 }
+
+
 
 /* CARTA */
 .contCard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 100px 100px 100px;
+    padding: 80px 100px 50px 100px;
 }
 
 .carta {
@@ -226,4 +182,4 @@
 
 .carta:hover .back {
     transform: rotateY(0deg);
-}
+}     

@@ -4,15 +4,20 @@ import Form from "@/components/Form";
 import TableToggle from "@/components/Toggle";
 import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
-import Layout from "@/app/layout"
+import Hero from "@/components/Hero";
 
 export default function Nosotros() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.contHero}>
-                <h1>SOBRE NOSOTROS</h1>
-            </div>
+            <Hero
+                imagePath="/images/HeroNosotros.jpg"
+                title="Sobre Nosotros"
+                button1Text="Preguntas Frecuentes"
+                button2Text="Nosotros"
+                button1Url="#preguntas"
+                button2Url="#nosotros"
+            />
             <div className={styles.cont}>
                 <h1 className={styles.title}>Resistance</h1>
                 <p>¿Has notado cómo el mundo ha cambiado producto de la virtualidad sin que todas las personas, empresas e instituciones educativas estuviesen preparadas para adoptar nuevas tecnologías?. Los delincuentes cibernéticos se reinventaron y aprovecharon la oportunidad, muestra de esto es que solamente en Colombia las cifras de los casos reportados por delitos como suplantación de sitios web, incrementaron en un 377% durante la pandemia en comparación con el año anterior, en páginas como: multas de tránsito, bonos del gobierno, y vacunación. El phishing es el principal esquema de fraude en el mundo; según estudio realizado en 2020 por la empresa TransUnion en 15 países que incluyó Colombia, el 27% de los consumidores afirmaron haber sido estafados con temas relacionados con el covid.</p>
@@ -95,28 +100,32 @@ export default function Nosotros() {
                 <h2 className={styles.title}>Nuestros Clientes</h2>
                 <Clients />
             </div>
-            <div className={styles.cont}>
-                <h2 className={styles.title}>Nosotros</h2>
-                <div>
-                    <h3 className={styles.contMision}>Misión</h3>
-                    <p>Contribuir con el desarrollo socio-económico de personas y empresas hacia un entorno digital seguro.</p>
-                    <h3 className={styles.contMision}>Visión</h3>
-                    <p>Para el año 2025:</p>
-                    <p>1. Estar posicionada como marca para la generación de contenido digital y juegos que impulsen la adopción de buenas prácticas de seguridad en empresas, personas y familias, contribuyendo a una estrategia de defensa basada en el ser humano.</p>
-                    <p>2. Ser reconocida como una de las compañías con más altos estándares en los servicios de consultorías y auditorías en seguridad de la información cumpliendo a cabalidad las expectativas de nuestros clientes y socios comerciales.</p>
-                    <p>3. Implementar servicios y plataformas de formación en ciberseguridad de fácil acceso a la sociedad, manteniéndose a la vanguardia de los avances tecnológicos y amenazas del entorno digital.</p>
-                    <p>4. Fortalecer las competencias del capital humano en la implementación de plataformas de defensa Open Source.</p>
+            <section id="nosotros">
+                <div className={styles.cont}>
+                    <h2 className={styles.title}>Nosotros</h2>
+                    <div>
+                        <h3 className={styles.contMision}>Misión</h3>
+                        <p>Contribuir con el desarrollo socio-económico de personas y empresas hacia un entorno digital seguro.</p>
+                        <h3 className={styles.contMision}>Visión</h3>
+                        <p>Para el año 2025:</p>
+                        <p>1. Estar posicionada como marca para la generación de contenido digital y juegos que impulsen la adopción de buenas prácticas de seguridad en empresas, personas y familias, contribuyendo a una estrategia de defensa basada en el ser humano.</p>
+                        <p>2. Ser reconocida como una de las compañías con más altos estándares en los servicios de consultorías y auditorías en seguridad de la información cumpliendo a cabalidad las expectativas de nuestros clientes y socios comerciales.</p>
+                        <p>3. Implementar servicios y plataformas de formación en ciberseguridad de fácil acceso a la sociedad, manteniéndose a la vanguardia de los avances tecnológicos y amenazas del entorno digital.</p>
+                        <p>4. Fortalecer las competencias del capital humano en la implementación de plataformas de defensa Open Source.</p>
+                    </div>
+                    <div>
+                        <h2 className={styles.title}>Nuestras Certificaciones</h2>
+                        <Carousel />
+                    </div>
+                    <section id="preguntas">
+                        <div>
+                            <p className={styles.par}>Lo que necesita saber</p>
+                            <h3 className={styles.title}>Preguntas Frecuentes</h3>
+                            <TableToggle />
+                        </div>
+                    </section>
                 </div>
-                <div>
-                    <h2 className={styles.title}>Nuestras Certificaciones</h2>
-                    <Carousel />
-                </div>
-                <div>
-                    <p className={styles.par}>Lo que necesita saber</p>
-                    <h3 className={styles.title}>Preguntas Frecuentes</h3>
-                    <TableToggle />
-                </div>
-            </div>
+            </section>
             <Form />
         </div>
     )
