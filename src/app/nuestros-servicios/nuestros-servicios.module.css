@@ -1,53 +1,6 @@
-.contHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
-    background-image: url('/images/contact.jpg');
-    background-size: cover;
-}
-
-.title {
-    color: white;
-    font-size: 80px;
-    font-family: 'Playfair Display';
-}
-
-.contSec {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.445);
-    margin-top: -90px;
-    padding: 30px;
-}
-
-.textHero {
-    color: white;
-    font-size: 15px;
-    font-family: 'Playfair Display';
-    width: 60%;
-}
-
 .cont {
-    padding: 50px 100px 100px 100px;
+    padding: 20px 100px 100px 100px;
     margin-top: 50px;
-}
-
-.button {
-    border-radius: 25px;
-    background-color: #2B5797;
-    color: white;
-    border: none;
-    padding: 15px;
-    margin-right: 15px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.button:hover {
-    transform: translateY(3px);
-    background-color: #4C7BBE;
-    margin-top: 40px;
 }
 
 .buttonService {
@@ -73,6 +26,7 @@
     justify-content: center;
     margin-top: 15px
 }
+
 .contServices {
     display: flex;
     justify-content: space-around;
@@ -84,7 +38,7 @@
     text-align: center;
     border: 1px solid gray;
     margin-right: 15px;
-  }
+}
 
 .image {
     height: 150px;
@@ -93,137 +47,4 @@
 
 .image:hover {
     filter: opacity(0.4)
-}
-
-/* SERVICIOS PARA FAMILIAS Y COLEGIOS */
-.contVideo {
-    display: flex;
-    background-image: linear-gradient(rgba(71, 71, 71, 0.671), rgba(52, 106, 150, 0.671)), url("/images/homeFamilia.jpg");
-    padding: 120px 140px 120px 140px;
-    margin-top: 50px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    gap: 50px;
-    align-items: center;
-    color: white;
-}
-
-.video {
-    width: 600px;
-    height: 300px;
-    border: none;
-}
-
-.contFamilia {
-    width: 50%;
-}
-
-.titleFamilia {
-    font-family: 'Oswald';
-    font-size: 60px;
-    color: white;
-    border-left: solid 4px #3a3b74;
-    padding-left: 10px;
-}
-
-.titleFam {
-    font-family: 'Oswald';
-    font-size: 60px;
-    border-left: solid 4px #3a3b74;
-    text-align: center;
-    padding-left: 30px;
-}
-
-.titleFamily {
-    font-family: 'Oswald';
-    font-size: 60px;
-    text-align: center;
-}
-
-.cont1 {
-    padding: 100px 270px 100px 270px;
-    margin-top: 50px;
-    background: linear-gradient(to bottom, #2A5797, #2A79BD);
-    color: white;
-}
-
-.contContenido {
-    display: flex;
-    margin-top: 40px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contImg {
-    width: 50%;
-    margin-left: 30px;
-}
-
-.sub {
-    font-family: 'Oswald';
-    font-size: 35px;
-    font-weight: 500;
-}
-
-/* CARTA */
-.contCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 100px 100px 100px;
-}
-
-.carta {
-    position: relative;
-    width: 30%;
-    margin: 15px;
-    height: 380px;
-    perspective: 1000px;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    color: white;
-    text-align: center;
-}
-
-.front,
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-}
-
-.front {
-    display: flex;
-    flex-direction: column;
-    background-color: #3498db;
-    transform: rotateY(0deg);
-    transition: transform 0.5s;
-}
-
-.icon {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 20px;
-}
-
-.back {
-    background-color: #2ecc71;
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
-}
-
-.carta:hover .front {
-    transform: rotateY(-180deg);
-}
-
-.carta:hover .back {
-    transform: rotateY(0deg);
 }

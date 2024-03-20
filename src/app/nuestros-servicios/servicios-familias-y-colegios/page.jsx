@@ -1,8 +1,11 @@
 'use client'
 import React from "react";
-import styles from '../nuestros-servicios.module.css';
+import styles from './familias.module.css';
 import Carta from "./carta";
 import Form from "@/components/Form";
+import Hero from "@/components/Hero";
+import Youtube from "@/components/Youtube";
+
 
 export default function Familias() {
 
@@ -42,39 +45,51 @@ export default function Familias() {
 
     return (
         <div>
-            <div className={styles.contHero}>
-                <h1>SERVICIOS PARA FAMILIAS Y COLEGIOS</h1>
-            </div>
-            <div className={styles.contVideo}>
-                <iframe
-                    className={styles.video}
-                    src="https://www.youtube.com/embed/u1jXEdwIAh0"
-                    title="Resistance Tips"
-                    allowFullScreen
-                ></iframe>
-                <div className={styles.contFamilia}>
-                    <h3 className={styles.titleFamilia}>Familias</h3>
-                    <p>En Resistance, sencillamente queremos hacer tu vida digital más segura y te acompañamos para que tú y tu familia logren los mayores beneficios de los avances tecnológicos del internet y las aplicaciones, de una manera en la que viajes por un camino seguro.</p>
+            <Hero
+                imagePath="/images/HeroFamilias.jpg"
+                title="Familias Colegios"
+                button1Text="Familias"
+                button2Text="Colegios"
+                button1Url="#familias"
+                button2Url="#colegios"
+            />
+            <section id="familias">
+                <div>
+                    <div className={styles.contVideo}>
+                        <iframe
+                            className={styles.video}
+                            src="https://www.youtube.com/embed/u1jXEdwIAh0"
+                            title="Resistance Tips"
+                            allowFullScreen
+                        ></iframe>
+                        <div className={styles.contFamilia}>
+                            <h3 className={styles.titleFamilia}>Familias</h3>
+                            <p>En Resistance, sencillamente queremos hacer tu vida digital más segura y te acompañamos para que tú y tu familia logren los mayores beneficios de los avances tecnológicos del internet y las aplicaciones, de una manera en la que viajes por un camino seguro.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.contCard}>
-                {serviciosData.map((servicio, index) => (
-                    <Carta
-                        key={index}
-                        title={servicio.title}
-                        description={servicio.description}
-                        image={servicio.image}
-                        backgroundImage={servicio.backgroundImage}
-                    />
-                ))}
-            </div>
-            <div className={styles.cont}>
-                <h2 className={styles.titleFam}>Nuestro Canal de Youtube</h2>
-            </div>
-            <div className={styles.cont1}>
-                <h3 className={styles.titleFamily}>Servicios Para Colegios</h3>
-                <p>En RESISTANCE SAS nos preocupamos por fortalecer las competencias y habilidades del ser humano de la mano de las tecnologías para prepararse a afrontar los riesgos de ciber seguridad, Es por eso que nuestra meta es educar tanto a padres de familia y colegios como ciudadanos del ciberespacio concientizando de los riesgos que conlleva el internet y todas las nuevas tecnologías de esta era digital.</p>
-            </div>
+                <div className={styles.contCard}>
+                    {serviciosData.map((servicio, index) => (
+                        <Carta
+                            key={index}
+                            title={servicio.title}
+                            description={servicio.description}
+                            image={servicio.image}
+                            backgroundImage={servicio.backgroundImage}
+                        />
+                    ))}
+                </div>
+                <div className={styles.cont}>
+                    <h2 className={styles.titleFam}>Nuestro Canal de Youtube</h2>
+                    <Youtube />
+                </div>
+            </section>
+            <section id="colegios">
+                <div className={styles.cont1}>
+                    <h3 className={styles.titleFamily}>Servicios Para Colegios</h3>
+                    <p>En RESISTANCE SAS nos preocupamos por fortalecer las competencias y habilidades del ser humano de la mano de las tecnologías para prepararse a afrontar los riesgos de ciber seguridad, Es por eso que nuestra meta es educar tanto a padres de familia y colegios como ciudadanos del ciberespacio concientizando de los riesgos que conlleva el internet y todas las nuevas tecnologías de esta era digital.</p>
+                </div>
+            </section>
             <div className={styles.cont}>
                 <h2 className={styles.titleFamily}>Programas de Formación</h2>
                 <p>Creemos firmemente en que las instituciones educativas con pandemia o no deberán fortalecer sus capacidades en formar a sus estudiantes en entornos cada vez más apoyados en el uso de tecnologías y por lo tanto, hoy la seguridad cibernética es un factor diferencial en como se aborda la educación ya que, las familias manifiestan una gran preocupación en como proteger a sus hijos en los distintos usos que le dan al internet, las aplicaciones y redes sociales para estar prevenidos ante amenazas como el ciber acoso, grooming, phishing ransomware, spoofing o sencillamente en el robo de información que se divulga por no aplicar las medidas de seguridad adecuadas.</p>
@@ -97,7 +112,7 @@ export default function Familias() {
                 </div>
 
                 <div className={styles.contContenido}>
-                <img
+                    <img
                         src="/images/antivirus.png"
                         alt="Antivirus"
                         className={styles.contImg}
@@ -125,14 +140,14 @@ export default function Familias() {
                 </div>
 
                 <div className={styles.contContenido}>
-                <img
+                    <img
                         src="/images/contraseñas.png"
                         alt="Contraseñas"
                         className={styles.contImg}
                     />
 
                     <div>
-                        <h3 className={styles.sub}>Gestores de contraseñas, cifrado de archivos/discos y cifrado de correo electrónicol</h3>
+                        <h3 className={styles.sub}>Gestores de contraseñas, cifrado de archivos/discos y cifrado de correo electrónico</h3>
                         <p>Imagina que tienes un llave multiusos…</p>
                         <p>¿Qué tan segura desearíamos que fuera esa llave?</p>
                         <p>En el mundo digital sucede lo mismo, no es bueno tener una llave para todo. Además, todas nuestras llaves debemos protegerlas bien. ¿Te parece importante una caja fuerte, donde puedas guardar cosas importante ara ti? digitalmente son carpetas ocultas y cifradas para cuidar esa información que no queremos que caiga en manos de todos.</p>
@@ -154,7 +169,7 @@ export default function Familias() {
                 </div>
 
                 <div className={styles.contContenido}>
-                <img
+                    <img
                         src="/images/backup.jpg"
                         alt="backup"
                         className={styles.contImg}

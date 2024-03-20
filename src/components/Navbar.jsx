@@ -1,30 +1,43 @@
 'use client'
+
 import React, { useState } from "react";
 import Link from 'next/link';
-import styles from '../styles/Navbar.module.css'
-
-
+import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdownRecursos, setShowDropdownRecursos] = useState(false);
+  const [showDropdownServicios, setShowDropdownServicios] = useState(false);
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+  const toggleDropdownRecursos = () => {
+    setShowDropdownRecursos(!showDropdownRecursos);
+    setShowDropdownServicios(false); // Asegúrate de cerrar el otro dropdown si está abierto
+  };
+
+  const toggleDropdownServicios = () => {
+    setShowDropdownServicios(!showDropdownServicios);
+    setShowDropdownRecursos(false); // Asegúrate de cerrar el otro dropdown si está abierto
   };
 
   return (
     <nav className={styles.container}>
       <Link href="/">
-          <img src='/icons/Logo.png' alt="logo" className={styles.image} />
+        <img src='/icons/Logo.png' alt="logo" className={styles.image} />
       </Link>
+      
       <div className={styles.list}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link href="/nuestros-servicios">Nuestros Servicios</Link>
+          <li className={styles.navItem}  onMouseEnter={toggleDropdownServicios} onMouseLeave={toggleDropdownServicios}>
+            <Link href="">Nuestros Servicios</Link>
+            {showDropdownServicios && (
+              <ul className={styles.dropdown}>
+                <li><Link href="/nuestros-servicios/servicios-empresas">Servicios Empresas</Link></li>
+                <li><Link href="/nuestros-servicios/servicios-familias-y-colegios">Servicios Familias y Colegios</Link></li>
+              </ul>
+            )}
           </li>
-          <li className={styles.navItem} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <li className={styles.navItem} onMouseEnter={toggleDropdownRecursos} onMouseLeave={toggleDropdownRecursos}>
             <Link href="/recursos">Recursos</Link>
-            {showDropdown && (
+            {showDropdownRecursos && (
               <ul className={styles.dropdown}>
                 <li><Link href="/recursos/blog">Blog</Link></li>
                 <li><Link href="/recursos/infografias">Infografías</Link></li>
@@ -34,12 +47,6 @@ const Navbar = () => {
           </li>
           <li className={styles.navItem}>
             <Link href="/sobre-nosotros">Sobre Nosotros</Link>
-            {showDropdown && (
-              <ul className={styles.dropdown}>
-                <li><Link href="/nuestros-servicios/servicios-empresas">Servicios Empresas</Link></li>
-                <li><Link href="/nuestros-servicios/servicios-familias-y-colegios">Servicios Familias y Colegios</Link></li>
-              </ul>
-            )}
           </li>
           <li className={styles.navItem}>
             <Link href="/contacto">Contacto</Link>
