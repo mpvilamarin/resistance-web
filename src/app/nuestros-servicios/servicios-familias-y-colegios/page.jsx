@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import styles from '../nuestros-servicios.module.css';
+import styles from './familias.module.css';
 import Carta from "./carta";
 import Form from "@/components/Form";
 import Hero from "@/components/Hero";
