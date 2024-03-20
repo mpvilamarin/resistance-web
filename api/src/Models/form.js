@@ -1,13 +1,13 @@
-const { DataTypes } = require('sequelize');
+import { DataTypes } from "sequelize";
+import { sequelize } from "../database/db.js";
 
-module.exports = (sequelize) => {
-  sequelize.define('Contacto', {
-    id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      primaryKey: true,
-      allowNull: false,
-    },
+export const Contacto = sequelize.define('public.contactos', {
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+    allowNull: false,
+  },
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -15,25 +15,24 @@ module.exports = (sequelize) => {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isEmail: true,
-      },
+       validate: {
+         isEmail: true,
+       },
     },
     telefono: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-      validate: {
-        isNumeric: true,
-      },
+       validate: {
+         isNumeric: true,
+       },
     },
     empresa: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     mensaje: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
-  }, { timestamps: false });
-};
+  }, { timestamps: true });

@@ -11,10 +11,11 @@
   "dependencies": {
     "@apollo/client": "^3.8.10",
     "@emailjs/browser": "^3.12.1",
-    "axios": "^1.6.5",
+    "@vercel/speed-insights": "^1.0.10",
+    "axios": "^1.6.8",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "express": "^4.19.0",
     "graphql": "^16.8.1",
     "morgan": "^1.10.0",
     "next": "^14.0.4",
