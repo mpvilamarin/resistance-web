@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react'
 import styles from './toggle.module.css'
+import Image from 'next/image';
 
-export default function seguridad() {
+export default function Seguridad() {
 
     const [toggleStates, setToggleStates] = useState({
         pregunta1: false,
@@ -28,7 +29,10 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta1 ? styles.active : ''}`}
                         >
                             Gestión de riesgos
-                            <img
+                            <Image
+                            width={20}
+                            height={20}
+                            alt='flecha abajo'
                                 src='/Flecha.svg'
                                 className={`${styles.icon} ${toggleStates.pregunta1 ? styles.active : ''}`}
                             />
@@ -51,8 +55,11 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta2 ? styles.active : ''}`}
                         >
                             Documentación de procesos misionales y de apoyo
-                            <img
+                            <Image
                                 src='/Flecha.svg'
+                                width={20}
+                                height={20}
+                                alt='flecha abajo'
                                 className={`${styles.icon} ${toggleStates.pregunta2 ? styles.active : ''}`}
                             />
                         </button>
@@ -73,8 +80,11 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta3 ? styles.active : ''}`}
                         >
                             Análisis de brechas sobre normas y estándares de seguridad
-                            <img
+                            <Image
                                 src='/Flecha.svg'
+                                width={20}
+                                height={20}
+                                alt='flecha abajo'
                                 className={`${styles.icon} ${toggleStates.pregunta3 ? styles.active : ''}`}
                             />
                         </button>
@@ -96,8 +106,11 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta4 ? styles.active : ''}`}
                         >
                             Análisis de vulnerabilidades en la tecnología
-                            <img
+                            <Image
                                 src='/Flecha.svg'
+                                width={20}
+                                height={20}
+                                alt='flecha abajo'
                                 className={`${styles.icon} ${toggleStates.pregunta4 ? styles.active : ''}`}
                             />
                         </button>
@@ -118,8 +131,11 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta5 ? styles.active : ''}`}
                         >
                             Arquitectura empresarial
-                            <img
+                            <Image
                                 src='/Flecha.svg'
+                                width={20}
+                                height={20}
+                                alt='flecha abajo'
                                 className={`${styles.icon} ${toggleStates.pregunta5 ? styles.active : ''}`}
                             />
                         </button>
@@ -135,8 +151,11 @@ export default function seguridad() {
                             className={`${styles.toggleTitle} ${toggleStates.pregunta6 ? styles.active : ''}`}
                         >
                             Definición e implementación de políticas, estándares y procedimientos de seguriad de la información
-                            <img
+                            <Image
                                 src='/Flecha.svg'
+                                width={20}
+                                height={20}
+                                alt='flecha abajo'
                                 className={`${styles.icon} ${toggleStates.pregunta6 ? styles.active : ''}`}
                             />
                         </button>

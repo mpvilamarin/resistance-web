@@ -3,6 +3,7 @@ import React from "react";
 import styles from './contacto.module.css';
 import Form from '../../components/Form';
 import Hero from "@/components/Hero";
+import Image from "next/image";
 
 export default function Contacto() {
 
@@ -18,8 +19,10 @@ export default function Contacto() {
             />
             <div className={styles.cont}>
                 <div className={styles.contContact}>
-                    <img
-                        src="images/Contacto2.jpg"
+                    <Image
+                        src="/images/Contacto2.jpg"
+                        width={700}
+                        height={400}
                         alt="Imagen Contacto"
                         className={styles.image} />
                     <div className={styles.contInfo}>
@@ -33,9 +36,9 @@ export default function Contacto() {
                                 <br />
                                 lunes a viernes
                                 <br />
-                                08:00 am - 06:00 pm 
-                                <br /> 
-                                y sábados 
+                                08:00 am - 06:00 pm
+                                <br />
+                                y sábados
                                 <br />
                                 08:00 am - 02:00 pm, hora local (GMT-5)</p>
                         </div>

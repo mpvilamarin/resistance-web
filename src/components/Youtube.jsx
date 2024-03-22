@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from '@/styles/youtube.module.css';
-import YouTubeSearch from 'youtube-api-v3-search';
 import axios from 'axios';
 
 
@@ -53,7 +52,10 @@ function Youtube() {
             <Slider {...settings} style={{ display: 'flex', alignItems: 'center' }}>
                 {videos && videos.length > 0 && videos.map((video, index) => (
                     <div key={index} onClick={() => openVideoInNewTab(video.id.videoId)}>
-                        <img src={video.snippet.thumbnails.default.url} alt={video.snippet.title} className={styles.carouselVideo} />
+                        <img 
+                        src={video.snippet.thumbnails.default.url} 
+                        alt={video.snippet.title} 
+                        className={styles.carouselVideo} />
                     </div>
                 ))}
             </Slider>

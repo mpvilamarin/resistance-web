@@ -5,6 +5,7 @@ import Carta from "./carta";
 import Form from "@/components/Form";
 import Hero from "@/components/Hero";
 import Youtube from "@/components/Youtube";
+import Image from "next/image";
 
 
 export default function Familias() {
@@ -104,16 +105,20 @@ export default function Familias() {
                             <li>Android celular: Manejo de tiempo de uso, restricciones de navegación e instalación de aplicaciones</li>
                         </ul>
                     </div>
-                    <img
+                    <Image
                         src="/images/parental.jpg"
+                        width={500}
+                        height={550}
                         alt="Control Parental"
                         className={styles.contImg}
                     />
                 </div>
 
                 <div className={styles.contContenido}>
-                    <img
+                    <Image
                         src="/images/antivirus.png"
+                        width={500}
+                        height={550}
                         alt="Antivirus"
                         className={styles.contImg}
                     />
@@ -132,16 +137,20 @@ export default function Familias() {
                         <p>Aprenderás a:</p>
                         <p>Configurar tu red wifi para evitr conexiones de extraños y saber siempre quien se encuentra conectado y si fue autorizado por ti. Adicionalmente podrás aprender a implementar controles de navegación a través del router de tu hogar y transmitir tus datos de forma segura incluso si estás utilizando una red pública.</p>
                     </div>
-                    <img
+                    <Image
                         src="/images/wifi.jpg"
+                        width={500}
+                        height={550}
                         alt="Wifi"
                         className={styles.contImg}
                     />
                 </div>
 
                 <div className={styles.contContenido}>
-                    <img
+                    <Image
                         src="/images/contraseñas.png"
+                        width={500}
+                        height={550}
                         alt="Contraseñas"
                         className={styles.contImg}
                     />
@@ -161,16 +170,20 @@ export default function Familias() {
                         <h3 className={styles.sub}>Gestión de seguridad y privacidad en exploradores, cuentas de Google, Microsoft y redes sociales</h3>
                         <p>Así como las grandes corporaciones obtiene mucho dinero por el uso de nuestros datos cuando navegamos o utilizamos sus aplicaciones, también invierten gran cantidad de dinero para que tengas opciones para proteger tu privacidad cuando utilizas tu explorador web, el correo electrónico, utilizas redes sociales, realizas compras y muchas actividades más, sin embargo gran parte de los ciudadanos del ciber espacio no tenemos idea como proteger nuestra privacidad en internet y es por eso que los delincuentes cibernéticos cada vez sacan más lucro por robar información de personas incautas en la red.</p>
                     </div>
-                    <img
+                    <Image
                         src="/images/google.jpg"
+                        width={500}
+                        height={550}
                         alt="Google"
                         className={styles.contImg}
                     />
                 </div>
 
                 <div className={styles.contContenido}>
-                    <img
+                    <Image
                         src="/images/backup.jpg"
+                        width={500}
+                        height={550}
                         alt="backup"
                         className={styles.contImg}
                     />
@@ -189,8 +202,10 @@ export default function Familias() {
                         <p>Aprenderás a:</p>
                         <p>Reconocer las estrategias usadas para ganar la confianza de las victimas, ejemplos y realización de correos falsos.</p>
                     </div>
-                    <img
+                    <Image
                         src="/images/phishing.jpg"
+                        width={500}
+                        height={550}
                         alt="phishing"
                         className={styles.contImg}
                     />

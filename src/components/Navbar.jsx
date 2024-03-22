@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
+import Image from "next/image";
 
 const Navbar = () => {
   const [showDropdownRecursos, setShowDropdownRecursos] = useState(false);
@@ -21,12 +22,17 @@ const Navbar = () => {
   return (
     <nav className={styles.container}>
       <Link href="/">
-        <img src='/icons/Logo.png' alt="logo" className={styles.image} />
+        <Image
+          src='/icons/Logo.png'
+          width={210}
+          height={80}
+          alt="logo"
+          className={styles.image} />
       </Link>
-      
+
       <div className={styles.list}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}  onMouseEnter={toggleDropdownServicios} onMouseLeave={toggleDropdownServicios}>
+          <li className={styles.navItem} onMouseEnter={toggleDropdownServicios} onMouseLeave={toggleDropdownServicios}>
             <Link href="">Nuestros Servicios</Link>
             {showDropdownServicios && (
               <ul className={styles.dropdown}>

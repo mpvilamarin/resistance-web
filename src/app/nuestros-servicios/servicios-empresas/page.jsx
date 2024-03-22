@@ -1,5 +1,5 @@
 'use client'
-
+import React from 'react';
 import styles from './empresas.module.css';
 import Consultorias from '../Toggles/Consultorias';
 import Seguridad from '../Toggles/Seguridad';

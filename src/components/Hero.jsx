@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const Hero = ({ imagePath, title, button1Text, button1Url, button2Text, button2Url }) => {
 
@@ -8,7 +9,12 @@ const Hero = ({ imagePath, title, button1Text, button1Url, button2Text, button2U
     return (
         <div className={styles.contHero}>
             <div className={styles.imageContainer}>
-                <img src={imagePath} alt="Servicios" className={styles.heroImage} />
+                <Image 
+                src={imagePath} 
+                width={1350}
+                height={645}
+                alt="Servicios" 
+                className={styles.heroImage} />
             </div>
             <div className={styles.containerHero}>
                 <div className={`${styles.animated} ${styles.bounceInLeft}`}>

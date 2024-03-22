@@ -6,6 +6,7 @@ import Carousel from "@/components/Carousel";
 import Clients from "@/components/Clients";
 import Hero from "@/components/Hero";
 import Layout from "@/app/layout.js"
+import Image from "next/image";
 
 export default function Nosotros() {
 
@@ -64,15 +65,17 @@ export default function Nosotros() {
                 </div>
 
                 <div className={styles.contFrase}>
-                    <h2 className={styles.frase}>"El eslabón más débil de la seguridad es el componente humano"</h2>
+                    <h2 className={styles.frase}>&quot;El eslabón más débil de la seguridad es el componente humano&quot;</h2>
                 </div>
 
                 <h2 className={styles.title}>Nuestra Propuesta de Valor</h2>
 
                 <div className={styles.contColumna}>
                     <div className={styles.contImage}>
-                        <img
-                            src="images/nosotrosColumna.jpg"
+                        <Image
+                            src="/images/nosotrosColumna.jpg"
+                            width={550}
+                            height={350}
                             alt="Imagen Hero"
                             className={styles.image}
                         />

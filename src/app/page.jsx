@@ -1,6 +1,7 @@
 import styles from '../styles/page.module.css';
 import Form from '@/components/Form';
 import Carousel from '@/components/Carousel';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -12,12 +13,14 @@ export default function Home() {
           <div className={styles.contHero}>
             <div className={styles.cont1}>
               <p className={styles.p1}>Resistance SAS</p>
-              <h3 className={styles.h31}>"El eslabón más débil de la seguridad es el componente humano"</h3>
+              <h3 className={styles.h31}>&quot;El eslabón más débil de la seguridad es el componente humano&quot;</h3>
               <p className={styles.p2}>Inicia con nosotros y notarás como la estrategia de Resistance para fortalecer las competencias del ser humano y enfrentar los riesgos de ciber seguridad generará ventajas competitivas para tu negocio y te dará tranquilidad acerca del buen uso de las tecnologías en tu familia</p>
             </div>
             <div className={styles.cont2}>
-              <img
-                src="images/imgHero.jpg"
+              <Image
+                src="/images/imgHero.jpg"
+                width={450}
+                height={500}
                 alt="Imagen Hero"
                 className={styles.image} />
             </div>
@@ -35,9 +38,11 @@ export default function Home() {
           <h1 className={styles.title}>Nuestros Servicios</h1>
           <p>Inicia con nosotros y notarás como la estrategia de Resistance para fortalecer las competencias del ser humano y enfrentar los riesgos de ciber seguridad generará ventajas competitivas para tu negocio y te dará tranquilidad acerca del buen uso de las tecnologías en tu familia</p>
           <div className={styles.contServiceE}>
-            <img
-              src="images/homeEmpresa.jpg"
+            <Image
+            src='/images/homeEmpresa.jpg'
               alt="Imagen Empresas"
+              width={600}
+              height={380}
               className={styles.image1}
             />
             <div className={styles.text}>
@@ -50,8 +55,10 @@ export default function Home() {
               <h3>Para Familias y Colegios</h3>
               <p>Generamos conciencia en padres de familia e instituciones educativas acerca de los riesgos de internet, aplicaciones, redes sociales, guiando con recomendaciones, aplicaciones móviles o en internet</p>
             </div>
-            <img
-              src="images/homeFamilia.jpg"
+            <Image
+              src="/images/homeFamilia.jpg"
+              width={680}
+              height={400}
               alt="Imagen Familia"
               className={styles.image2}
             />

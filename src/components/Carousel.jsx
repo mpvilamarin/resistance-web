@@ -39,7 +39,11 @@ const Carousel = () => {
          <Slider {...settings} style={{ display: 'flex', alignItems: 'center'}}>
             {images.map((image, index) => (
                <div key={index}>
-                  <img src={image} className={styles.carouselImage} />
+                  <img 
+                  src={image} 
+                  className={styles.carouselImage}
+                  alt='Certificado' 
+                  />
                </div>
             ))}
          </Slider>

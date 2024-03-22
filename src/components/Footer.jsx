@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/Footer.module.css';
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -9,13 +10,13 @@ export default function Footer() {
                     <h2 className={styles.sub}>Resistance SAS</h2>
                     <p className={styles.text}>Conócenos también en:</p>
                     <div className={styles.icons}>
-                        <img src='/icons/iconoBlancoFace.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoTwi.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoWha.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoIn.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoSpo.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoYou.png' alt="" className={styles.social} />
-                        <img src='/icons/iconoBlancoLin.png' alt="" className={styles.social} />
+                        <Image src='/icons/iconoBlancoFace.png' width={35} height={35} alt="facebook" className={styles.social} />
+                        <Image src='/icons/iconoBlancoTwi.png' width={35} height={35} alt="twitter" className={styles.social} />
+                        <Image src='/icons/iconoBlancoWha.png' width={35} height={35} alt="whatsapp" className={styles.social} />
+                        <Image src='/icons/iconoBlancoIn.png' width={35} height={35} alt="instagram" className={styles.social} />
+                        <Image src='/icons/iconoBlancoSpo.png' width={35} height={35} alt="spotify" className={styles.social} />
+                        <Image src='/icons/iconoBlancoYou.png' width={35} height={35} alt="youtube" className={styles.social} />
+                        <Image src='/icons/iconoBlancoLin.png' width={35} height={35} alt="linkedin" className={styles.social} />
                     </div>
                 </div>
                 <div className={styles.contRight}>

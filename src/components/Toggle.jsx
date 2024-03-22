@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const TableToggle = () => {
   const [toggleStates, setToggleStates] = useState({
@@ -29,8 +30,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta1 ? styles.active : ''}`}
           >
             ¿Cuáles son sus principales clientes?
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta1 ? styles.active : ''}`}
             />
           </button>
@@ -46,8 +50,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta2 ? styles.active : ''}`}
           >
             ¿Dónde puedo contactarlos?
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta2 ? styles.active : ''}`}
             />
           </button>
@@ -63,8 +70,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta3 ? styles.active : ''}`}
           >
             ¿Qué los diferencia de los otros?
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta3 ? styles.active : ''}`}
             />
           </button>
@@ -82,8 +92,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta4 ? styles.active : ''}`}
           >
             ¿Quiénes son sus principales aliados?
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta4 ? styles.active : ''}`}
             />
           </button>
@@ -99,8 +112,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta5 ? styles.active : ''}`}
           >
             ¿Cuál es la principal amenaza de seguridad actualmente?
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta5 ? styles.active : ''}`}
             />
           </button>
@@ -116,8 +132,11 @@ const TableToggle = () => {
             className={`${styles.toggleTitle} ${toggleStates.pregunta6 ? styles.active : ''}`}
           >
             ¿Cómo puedo proteger a mi familia en el ciber espacio
-            <img
+            <Image
               src='/Flecha.svg'
+              width={20}
+              height={20}
+              alt='flecha abajo'
               className={`${styles.icon} ${toggleStates.pregunta6 ? styles.active : ''}`}
             />
           </button>

@@ -3,6 +3,7 @@
 import React, {useRef} from "react";
 import styles from '../styles/Form.module.css';
 import emailjs from '@emailjs/browser';
+import Image from "next/image";
 
 export default function Form() {
   const form = useRef();
@@ -72,14 +73,18 @@ export default function Form() {
         </form>
 
         <div className={styles.contAzul}>
-          <img
+          <Image
             src="/Llamada.svg"
+            width={40}
+            height={40}
             alt="Llamada"
             className={styles.icon}
           />
           <p className={styles.parrafo}>+57 302 705 8970</p>
-          <img
+          <Image
             src="/images/Resistance.png"
+            width={40}
+            height={40}
             alt="Resistance"
             className={styles.icon1}
           />
